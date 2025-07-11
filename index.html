@@ -10,9 +10,10 @@
 <body>
 
   <header>
-    <img src="pfp1.jpg" alt="Ayushi's Photo" class="profile-pic" />
-    <h1>Ayushi Singh</h1>
-    <p>Final Year B.Tech CSE Student | Web Developer | ML Enthusiast</p>
+    <button onclick="toggleMode()" class="mode-btn">🌓 Toggle Mode</button>
+    <img src="pfp1.jpeg" alt="Ayushi's Photo" class="profile-pic" />
+    <h1>Ayushi Singh.</h1>
+    <p class="typing-text"></p>
   </header>
 
   <main>
@@ -28,14 +29,12 @@
         <li><strong>Fake News Detection</strong> – Built with Machine Learning (TF-IDF + Naive Bayes) to identify misleading content.</li>
       </ul>
     </section>
-
-    <section class="skills">
+  <section class="skills">
       <h2>Skills</h2>
       <p><strong>Languages & Tools:</strong> HTML, CSS, JavaScript, Python, Git, GitHub</p>
       <p><strong>Domains:</strong> Data Structures & Algorithms, Web Development, Machine Learning</p>
     </section>
 
-    <section class="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:singhayushi3048@gmail.com">singhayushi3048@gmail.com</a></p>
       <div class="social-icons">
@@ -55,6 +54,11 @@
   <footer>
     <p>&copy; 2025 Ayushi Singh | All rights reserved</p>
   </footer>
+  <script>
+  function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
 
 </body>
 </html>
