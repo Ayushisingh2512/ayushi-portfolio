@@ -46,8 +46,8 @@ a {
 }
 
 .social-icons a i {
-  color: #4b0082;
-  transition: transform 0.2s ease, color 0.2s ease;
+  color: #007182
+ transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .social-icons a:hover i {
@@ -59,10 +59,99 @@ footer {
   text-align: center;
   padding: 15px;
   background-color: #4b0082;
-  color: white;
+  color:white;
   position: relative;
   bottom: 0;
   width: 100%;
   margin-top: 40px;
   border-top: 4px solid #ddd;
+}
+.typing-text::after {
+  content: "Final year B.tech CSE student|Web Developer|ML Enthusiast";
+  animation: typing 3s steps(40, end) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 2px solid;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+}
+
+.dark-mode header {
+  background: #111;
+  color: #fff;
+}
+
+.dark-mode .card,
+.dark-mode .project {
+  background-color: #2b2b3c;
+  color: #fff;
+}
+
+/* Optional: Toggle button styling */
+.mode-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #00bfa6;
+  color: white;
+  font-weight: bold;
+}
+
+.dark-mode {
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+}
+
+/* HEADER */
+.dark-mode header {
+  background-color: #111;
+  color: white;
+}
+
+/* ABOUT, PROJECTS, SKILLS SECTION */
+.dark-mode section {
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+}
+
+/* PROJECT BOXES / CARDS */
+.dark-mode .project, 
+.dark-mode .card {
+  background-color: #2c2c3a;
+  color: #fff;
+}
+
+/* BUTTON */
+.mode-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #00bfa6;
+  color: white;
+  font-weight: bold;
+}
+body, header, section {
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
